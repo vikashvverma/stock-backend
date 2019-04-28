@@ -1,0 +1,154 @@
+{
+	"info": {
+		"_postman_id": "1dba66e0-e856-43b9-a546-53fbc6b03892",
+		"name": "stock",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "localhost:9000/stock/{from}/{to}?ticker=CSX&ticker=INTC&ticker=KEY",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "API-KEY",
+						"value": "Zm9vYmFyYmF6",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "localhost:9000/stock/02-02-2010/20-02-2010?ticker=CSX&ticker=INTC&ticker=KEY",
+					"host": [
+						"localhost"
+					],
+					"port": "9000",
+					"path": [
+						"stock",
+						"02-02-2010",
+						"20-02-2010"
+					],
+					"query": [
+						{
+							"key": "ticker",
+							"value": "CSX"
+						},
+						{
+							"key": "ticker",
+							"value": "INTC"
+						},
+						{
+							"key": "ticker",
+							"value": "KEY"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:9000/stock/top/{from}/{to}",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "API-KEY",
+						"value": "Zm9vYmFyYmF6",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "localhost:9000/stock/top/05-01-2010/30-01-2010",
+					"host": [
+						"localhost"
+					],
+					"port": "9000",
+					"path": [
+						"stock",
+						"top",
+						"05-01-2010",
+						"30-01-2010"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:9000/stock/{ticker}",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "API-KEY",
+						"value": "Zm9vYmFyYmF6",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "localhost:9000/stock/EA",
+					"host": [
+						"localhost"
+					],
+					"port": "9000",
+					"path": [
+						"stock",
+						"EA"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:9000/stock/{name}",
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"id": "4cb2893c-b547-4a96-ba95-e5bd1f104af7",
+						"exec": [
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "API-KEY",
+						"value": "Zm9vYmFyYmF6",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "localhost:9000/stock/Electronic Arts Inc.",
+					"host": [
+						"localhost"
+					],
+					"port": "9000",
+					"path": [
+						"stock",
+						"Electronic Arts Inc."
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
