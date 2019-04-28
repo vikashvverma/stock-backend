@@ -25,7 +25,7 @@ echo "Cross-compiling binaries..."
 rm -rf "$build_dir"
 gox \
     -output="${build_dir}/{{.Dir}}_${version}_{{.OS}}_{{.Arch}}/{{.Dir}}" \
-    -os="darwin linux windows freebsd openbsd" \
+    -os="darwin linux windows" \
     -arch="amd64" \
     -ldflags "-X main.version=$git_version" \
     ./...
