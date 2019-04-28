@@ -1,0 +1,10 @@
+{
+  "appPort": "9000",
+  "dbUsername": "foobarbaz",
+  "dbPassword": "C0mplexPwd",
+  "dbServer": "ds147926.mlab.com",
+  "dbPort": "47926",
+  "stock": "./data/stocksf081a85.csv",
+  "data": "./data/prices763fefc.csv",
+  "apiKey": "Zm9vYmFyYmF6"
+}
