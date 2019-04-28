@@ -1,7 +1,7 @@
 #!/bin/bash
 # Run project for current architecture.
 # Usage: script/dev.sh
-
+export PATH="$PATH:$GOPATH/bin"
 export config=config/config.json
 
 if [[ $(uname -s) == "Darwin" ]]; then
