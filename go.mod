@@ -1,7 +1,6 @@
 module github.com/vikashvverma/stock-backend
 
 require (
-	github.com/DATA-DOG/go-sqlmock v1.3.3 // indirect
 	github.com/codegangsta/negroni v1.0.0
 	github.com/go-stack/stack v1.8.0 // indirect
 	github.com/golang/snappy v0.0.1 // indirect
